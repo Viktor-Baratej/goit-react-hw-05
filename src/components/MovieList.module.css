@@ -1,0 +1,11 @@
+.movie_list {
+}
+
+.movie_item {
+  font-size: 22px;
+  color: rgb(168, 239, 216);
+  &&:hover {
+    color: rgb(5, 109, 109);
+    cursor: pointer;
+  }
+}
