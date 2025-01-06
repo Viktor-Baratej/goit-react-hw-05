@@ -14,7 +14,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   background-image: linear-gradient(rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8)),
-    url(./src/img/chapel-5878656_1920.jpg);
+    url(/src/img/chapel-5878656_1920.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
