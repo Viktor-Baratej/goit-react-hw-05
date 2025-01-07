@@ -57,12 +57,20 @@ function MovieDetailsPage() {
       <p className={s.movie_text}>{movie.overview}</p>
       <ul className={s.movie_list}>
         <li>
-          <Link className={s.movie_item} to="/cast">
+          <Link
+            className={s.movie_item}
+            to="/cast"
+            state={{ from: location.state?.from }}
+          >
             Cast
           </Link>
         </li>
         <li>
-          <Link className={s.movie_item} to="/reviews">
+          <Link
+            className={s.movie_item}
+            to="/reviews"
+            state={{ from: location.state?.from }}
+          >
             Reviews
           </Link>
         </li>
