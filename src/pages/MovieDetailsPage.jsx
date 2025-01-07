@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Outlet, useNavigate, useLocation } from 'react-router-dom';
+import {
+  useParams,
+  Outlet,
+  useNavigate,
+  useLocation,
+  Link,
+} from 'react-router-dom';
 import { fetchMovieDetails } from '../services/tmdb-api';
 import s from './MovieDetailsPage.module.css';
 
@@ -49,6 +55,19 @@ function MovieDetailsPage() {
         <img src={`${IMAGE_BASE_URL}${movie.poster_path}`} alt={movie.title} />
       )}
       <p className={s.movie_text}>{movie.overview}</p>
+      <ul className={s.movie_list}>
+        <li>
+          <Link className={s.movie_item} to="/cast">
+            Cast
+          </Link>
+        </li>
+        <li>
+          <Link className={s.movie_item} to="/reviews">
+            Reviews
+          </Link>
+        </li>
+      </ul>
+
       <Outlet />
     </div>
   );

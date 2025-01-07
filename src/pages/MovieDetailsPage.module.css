@@ -1,4 +1,4 @@
-/* .movie_list {
+.movie_list {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -12,7 +12,7 @@
     color: rgb(5, 109, 109);
     cursor: pointer;
   }
-} */
+}
 
 .movie_title {
   color: rgb(188, 238, 221);
