@@ -59,7 +59,7 @@ function MovieDetailsPage() {
         <li>
           <Link
             className={s.movie_item}
-            to="/cast"
+            to="cast"
             state={{ from: location.state?.from }}
           >
             Cast
@@ -68,7 +68,7 @@ function MovieDetailsPage() {
         <li>
           <Link
             className={s.movie_item}
-            to="/reviews"
+            to="reviews"
             state={{ from: location.state?.from }}
           >
             Reviews
