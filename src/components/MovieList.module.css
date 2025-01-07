@@ -1,11 +1,33 @@
-.movie_list {
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.movie_item {
-  font-size: 22px;
-  color: rgb(168, 239, 216);
-  &&:hover {
-    color: rgb(5, 109, 109);
-    cursor: pointer;
-  }
+.item {
+  flex: 1 1 calc(200px - 20px);
+  max-width: calc(200px - 20px);
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.item:hover {
+  transform: scale(1.15);
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.item a {
+  text-decoration: none;
+  color: rgb(188, 238, 221);
+  font-weight: bold;
 }

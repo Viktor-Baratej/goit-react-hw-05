@@ -10,7 +10,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div>
+    <div className={s.header_title}>
       <h1 className={s.title}>Trending Movies</h1>
       <MovieList movies={movies} />
     </div>
