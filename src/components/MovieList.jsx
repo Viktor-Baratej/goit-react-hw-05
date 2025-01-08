@@ -8,6 +8,10 @@ function MovieList({ movies }) {
       {movies.map(movie => (
         <li key={movie.id} className={s.item}>
           <Link to={`/movies/${movie.id}`} state={{ from: location }}>
+            <img
+              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+              alt={movie.title}
+            />
             {movie.title || movie.name}
           </Link>
         </li>
