@@ -1,9 +1,11 @@
 .autor_title {
+  text-align: center;
   font-size: 20px;
   color: rgb(188, 238, 221);
 }
 
 .autor_content {
+  text-align: center;
   font-size: 20px;
   color: rgb(188, 238, 221);
 }

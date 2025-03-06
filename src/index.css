@@ -1,6 +1,5 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,4 +18,49 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Для мобільних пристроїв (до 768px) */
+@media (max-width: 768px) {
+  body {
+    padding-top: 40px;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .movie-list {
+    grid-template-columns: 1fr; /* Одна колонка */
+  }
+}
+
+/* Для планшетів (від 768px до 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .movie-list {
+    grid-template-columns: 1fr 1fr; /* Дві колонки */
+  }
+}
+
+/* Для десктопів (від 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+
+  .movie-list {
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+  }
 }

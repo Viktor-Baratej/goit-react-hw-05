@@ -52,7 +52,11 @@ function MovieDetailsPage() {
       </div>
       <h1 className={s.movie_title}>{movie.title}</h1>
       {movie.poster_path && (
-        <img src={`${IMAGE_BASE_URL}${movie.poster_path}`} alt={movie.title} />
+        <img
+          className={s.movie_img}
+          src={`${IMAGE_BASE_URL}${movie.poster_path}`}
+          alt={movie.title}
+        />
       )}
       <p className={s.movie_text}>{movie.overview}</p>
       <ul className={s.movie_list}>
