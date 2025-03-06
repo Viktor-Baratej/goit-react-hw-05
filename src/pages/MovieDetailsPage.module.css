@@ -21,7 +21,12 @@
 }
 
 .movie_img {
-  text-align: center;
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  max-height: 100vh;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
 .movie_text {
